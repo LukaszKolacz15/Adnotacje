@@ -8,7 +8,7 @@ public class Player {
     public String name;
     private String lastname;
 
-    @UsingInternet
+    @UsingInternet(internetGetway = "WiFi")
     public String getName() {
         return name;
     }
@@ -21,7 +21,7 @@ public class Player {
         this.score = score;
     }
 
-    @UsingInternet
+    @UsingInternet(internetGetway = "3g")
     public void setName(String name) {
         this.name = name;
     }
@@ -29,6 +29,8 @@ public class Player {
     public void setLastname(String lastname) {
         this.lastname = lastname;
     }
+
+
 
 
 
